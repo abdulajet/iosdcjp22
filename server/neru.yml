@@ -1,0 +1,21 @@
+project:
+    name: iosdcjp
+instance:
+    name: dev
+    runtime: nodejs16
+    region: aws.euw1
+    application-id: 0d4b30be-677d-4245-97e2-059ce8f003d4
+    capabilities:
+        - voice
+    entrypoint:
+        - node
+        - index.js
+    configurations:
+        contact:
+            type: phone
+            number: "447441446999"
+debug:
+    name: debug
+    entrypoint:
+        - nodemon
+        - index.js
